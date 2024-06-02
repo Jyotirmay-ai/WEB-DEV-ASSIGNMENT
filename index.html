@@ -155,53 +155,54 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form
-              class="mb-3"
-              id="ajaxForm"
-              action="https://getform.io/f/pbygzdob"
-              method="POST"
-            >
-              <div class="mb-3">
-                <label for="recipient-name" class="col-form-label"
-                  >Work Email:</label
-                >
-                <input type="email" name="email" class="form-control" />
-              </div>
 
-              <div class="mb-2">
-                <div class="row">
-                  <div class="col">
-                    <label for="first-name" class="col-form-label"
-                      >First Name:</label
-                    >
-                    <input
-                      type="text"
-                      name="fname"
-                      class="form-control border-bottom"
-                    />
-                  </div>
-                  <div class="col">
-                    <label for="last-name" class="col-form-label"
-                      >Last Name:</label
-                    >
-                    <input type="text" name="lname" class="form-control" />
-                  </div>
+            <form class="mb-3" method="post" id="ajaxForm" action="https://getform.io/f/warkqxob" name="contactForm">
+
+
+              <div class="row">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="recipient-name" class="col-form-label">Work Email *</label>
+                  <input type="email" class="form-control" name="email" id="email"  placeholder="email">
                 </div>
               </div>
-              <div class="mb-3">
-                <label for="message-text" class="col-form-label"
-                  >Message:</label
-                >
-                <textarea
-                  class="form-control"
-                  type="text"
-                  name="message"
-                ></textarea>
+
+              <div class="row">
+
+                <div class="col-md-6 form-group mb-3">
+                  <label for="first-name" class="col-form-label">First Name *</label>
+                  <input type="text" class="form-control" name="fname" id="name" placeholder="first-name">
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                  <label for="last-name" class="col-form-label">Last Name *</label>
+                  <input type="text" class="form-control" name="lname" id="name" placeholder="last-name">
+                </div>
+
               </div>
-              <button type="submit" class="btn btn-primary">
-                Send message
-              </button>
+
+              <div class="row mb-3">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="message-text" class="col-form-label">Message *</label>
+                  <textarea class="form-control" type="text" name="message" id="message" cols="30" rows="3"  placeholder="Write your message"></textarea>
+                </div>
+              </div>
+
+              <div class="checkbox-wrapper-4 mb-4">
+                <label class="cbx" for="morning"></label>
+                  <input class="inp-cbx" id="morning" type="checkbox"  name="subscribe" value="yes" checked />
+                  <span>&nbsp; I agree to Fyle's terms and conditions, and provide consent to send me communication. </span>
+                </label>    
+              </div>
+
+              <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 form-group text-center">
+                  <input id="SENDME" type="submit" value="Send Message" class="btn btn-block rounded-2 py-2 px-4">
+                </div>
+              </div>
+
+            
             </form>
+
           </div>
         </div>
       </div>
