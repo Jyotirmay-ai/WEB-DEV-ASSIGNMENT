@@ -95,10 +95,37 @@
 /* -------------------------------CARD HOVER------------------------------------- */
 
 
+/* -------------------------------form css STARTS------------------------------------- */
 
-.submit-success, .submit-error {
-    display: none;
+.form-control {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	padding-left: 0;
+	padding-right: 0;
+	border-radius: 0;
+	background: none; 
 }
+.form-control:active, .form-control:focus {
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-color: #000; 
+}
+  
+/* -------------------------------form css ENDS------------------------------------- */
+
+
+
+
+
+
+  #SENDME{
+	border-color: #FF3366;
+	background-color: #FF3366;	
+	color: white;
+  }
+
+
 
 
 
