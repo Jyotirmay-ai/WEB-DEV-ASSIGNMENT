@@ -7,26 +7,6 @@ if (exampleModal) {
     // Extract info from data-bs-* attributes
     const recipient = button.getAttribute('data-bs-whatever')
     // If necessary, you could initiate an Ajax request here
-    $("#ajaxForm").submit(function(e){
-        e.preventDefault();
-        var action = $(this).attr("action");
-        $.ajax({
-          type: "POST",
-          url: action,
-          crossDomain: true,
-          data: new FormData(this),
-          dataType: "json",
-          processData: false,
-          contentType: false,
-          headers: {
-            "Accept": "application/json"
-          }
-        }).done(function() {
-           $('.success').addClass('is-active');
-        }).fail(function() {
-           alert('An error occurred! Please try again later.')
-        });
-      });
     // and then do the updating in a callback.
 
     // Update the modal's content.
