@@ -1,4 +1,5 @@
 
+// -----------------------  modal STARTS --------------------------------------
 const exampleModal = document.getElementById('exampleModal')
 if (exampleModal) {
   exampleModal.addEventListener('show.bs.modal', event => {
@@ -17,64 +18,25 @@ if (exampleModal) {
     modalBodyInput.value = recipient
   })
 }
+// -----------------------  modal ENDS -----------------------------------------
 
 
 
 
 
+// -----------------------  change the images on click STARTS -----------------------------------------
+var img = document.getElementById("img-area");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let image = document.getElementById('image');
-// function newimagechange(){
-//     this.src = "images/image3.jpg"
-// }
-// image.addEventListener('click', newimagechange);
-
-// // function changeImage1(){
-// //     var img = document.getElementById('image');
-// //     img.src = 'images/image1.jpg';
-// // }
-
-// // function changeImage2(){
-// //     var img = document.getElementById('image');
-// //     img.src = 'images/image2.png';
-// // }
-
-// // function changeImage3(){
-// //     var img = document.getElementById('image');
-// //     img.src = 'images/image3.jpg';
-// // }
-
-
-
+  function changeImage1(){
+    img.src='images/3.jpg';        
+  }
+  function changeImage2(){
+    img.src='images/4.png';          
+  }
+  function changeImage3(){       
+    img.src='images/5.jpg';          
+  }
+// -----------------------  change the images on click ENDS -----------------------------------------
 
 
 
